@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace MultiBloxy
@@ -82,6 +82,36 @@ namespace MultiBloxy
                 { "Error.Singleton.Caption", "Ошибка одиночного экземпляра" },
                 { "Error.Singleton.Message", "{0} уже запущен. Попробуйте поискать в области уведомлений." }
             };
+            
+            Locales["cz"] = new Dictionary<string, string>
+            {
+                { "ContextMenu.StatusMenuItem.Running", "Stav: Běží" },
+                { "ContextMenu.StatusMenuItem.Paused", "Stav: Pozastaveno" },
+                { "ContextMenu.StatusMenuItem.Error", "Stav: Chyba při vytváření mutexu" },
+                { "ContextMenu.PauseMenuItem.Pause", "Pozastavit" },
+                { "ContextMenu.PauseMenuItem.Resume", "Spustit" },
+                { "ContextMenu.ReloadMenuItem.Reload", "Znovu načíst" },
+                { "ContextMenu.StartNewInstanceMenuItem.StartNewInstance", "Spustit nouvou instanci Robloxu" },
+                { "ContextMenu.StopAllInstancesMenuItem.StopAllInstances", "Ukončit Všechny Instance Robloxu" },
+                { "ContextMenu.ShowInExplorerMenuItem.ShowInExplorer", "Otevřít v průzkumníku" },
+                { "ContextMenu.SettingsMenuItem.Settings", "Nastavení" },
+                { "ContextMenu.SettingsMenuItem.PauseOnLaunchMenuItem.PauseOnLaunch", "Pozastavit při Spuštění" },
+                { "ContextMenu.SettingsMenuItem.ResetRememberedMenuItem.ResetRemembered", "Resetovat zapamatovaný nastavení" },
+                { "ContextMenu.SettingsMenuItem.LanguageMenuItem.Language", "Jazyk" },
+                { "ContextMenu.SettingsMenuItem.LanguageMenuItem.AutoDetectMenuItem.AutoDetect", "Automaticky detekovat" },
+                { "ContextMenu.ExitMenuItem.Exit", "Ukončit" },
+                { "Error.Mutex.Caption", "Nepodařilo se vytvořit mutex" },
+                { "Error.Mutex.Message", "Při vytváření Mutexu došlo k chybě. K tomu pravděpodobně došlo proto, že v době spuštění {0} byl Roblox již spuštěn a měl zaregistrovaný svůj handle. Můžete provést následující:" },
+                { "Error.Mutex.Action.Fix", "Zavřete handle pro všechny instance Robloxu" },
+                { "Error.Mutex.Action.Abort", "Ukončit všechny instance Robloxu" },
+                { "Error.Mutex.Action.Retry", "Zkuste to znovu" },
+                { "Error.Mutex.Action.Ignore", "Ignorovat chybu a pokračovat" },
+                { "Error.Mutex.Action.Remember", "Pamatovat si tuto volbu" },
+                { "Error.Mutex.Action.Confirm", "Potvrdit" },
+                { "Error.Singleton.Caption", "Chyba Singletonu" },
+                { "Error.Singleton.Message", "{0} už běží. Zkuste se podívat v systémové liště." }
+            };
+
         }
 
         // Retrieves the localized string for the given key
